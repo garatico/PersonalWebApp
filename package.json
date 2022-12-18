@@ -1,0 +1,32 @@
+{
+  "name": "personalwebapp",
+  "version": "1.0.0",
+  "description": "Node.JS web app version of my personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garatico/PersonalWebApp.git"
+  },
+  "author": "Giovanni Aratico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garatico/PersonalWebApp/issues"
+  },
+  "homepage": "https://github.com/garatico/PersonalWebApp#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

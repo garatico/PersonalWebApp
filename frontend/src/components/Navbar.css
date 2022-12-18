@@ -1,0 +1,32 @@
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.5em;
+    background-image: linear-gradient(rgba(50, 10, 70, 0.1), rgba(50, 10, 70, 0.2));
+    border-radius: 25px;
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+    
+}
+
+#navbar ul li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2.5vh;
+    
+}
+
+#navbar ul li a {
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    font-size: clamp(1.5rem, 1vw, 4rem);
+    font-weight: 800;
+    color: white;
+    background-color: rgba(80, 20, 110, 0.1);
+    border-radius: 15px;
+}

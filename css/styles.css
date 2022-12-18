@@ -1,0 +1,286 @@
+/*
+     FILE: styles.css
+     AUTHOR: Giovanni Aratico 
+     CREATED: 11-24-2021
+     LAST UPDATED: 01-04-2022
+*/
+
+/* MEDIA QUERIES STYLING: */
+/* Hides spotify player under 576px
+   Hides twitter timeline under 576px
+*/
+
+
+
+@media (max-width: 576px) {
+    #twitter-timeline {
+        display: none;
+    }
+    #spotify-player iframe {
+        display: none;
+    }
+    #header {
+        margin: 1vh;
+        
+    }
+    #header h1 {
+        font-size: 2vw;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    #headshot{
+        display: none;
+    }
+}
+@media (min-width: 576px) {
+    #header {
+        margin: 1vh;
+        align-items: center;
+        text-align: center;
+        
+    }
+    #header h1 {
+        font-size: 4rem;
+    }
+    #headshot{
+       margin: 2vh;
+       width: 20vh;
+       height: 20vh;
+    }
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(33, 7, 39);
+}
+
+.site-wrapper {
+    max-height: 100vw;
+    width: 99%;
+    height: 99%;
+    border-radius: 10px;
+    margin-top: clamp(1em, 2em, 4em);
+    margin-bottom: clamp(1em, 2em, 4em);
+    margin-left: clamp(2em, 4em, 6em);
+    margin-right: clamp(2em, 4em, 6em);
+    background-image: linear-gradient(rgba(50, 10, 70, 0.10), rgba(50, 10, 70, 0.25)), url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*  NAVBAR RELATED STYLINGS */
+.nav-container {
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.5em;
+    background-image: linear-gradient(rgba(50, 10, 70, 0.1), rgba(50, 10, 70, 0.2));
+    border-radius: 25px;
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+    
+}
+
+#navbar ul li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2.5vh;
+    
+}
+
+#navbar ul li a {
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    font-size: clamp(1.5rem, 1vw, 4rem);
+    font-weight: 800;
+    color: white;
+    background-color: rgba(80, 20, 110, 0.1);
+    border-radius: 15px;
+}
+
+/* HEADING RELATED SYLING */
+#header {
+    /* display: flex; */
+    display:flex;
+    background-image: linear-gradient(rgba(50, 10, 70, 0.3), rgba(50, 10, 70, 0.7));
+    border-radius: 25px;
+    justify-content:center;
+}
+#header h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 6rem);
+}
+#headshot {
+    border-radius: 50%;
+    border: 0.5em solid purple;
+}
+
+/* CONTENT RELATED STYLINGS */
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em;
+    padding: 1em;
+}
+.info {
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-weight: 800;
+    color: white;
+}
+
+/* SOCIAL LINKS STYLING */
+
+#social-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+
+}
+#social-links a {
+    vertical-align: middle;
+    padding: clamp(0.5vw, 1vw, 1.5vw);
+    background-color: rgba(175, 175, 175, 0.75);
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#social-links a svg {
+    width: clamp(25px, 75px, 125px);
+    height: clamp(25px, 75px, 125px);
+    
+}
+
+#spotify-player iframe {
+    width: 480px;
+}
+
+/* INDEX PAGE SPECIFIC STYLING */
+#info_index {
+    text-decoration: none;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-weight: 800;
+    color: white;
+}
+ul#giovanni_desc {
+    margin-left: -1vw;
+    display: block;
+}
+#giovanni_desc li{
+    font-size: clamp(1rem, 2.5vw, 6rem);
+    font-weight: 800;
+    font-style: italic;
+    margin-left: 5vh;
+}
+#welcome_desc {
+    margin-right: 25vh;
+}
+#twitter-timeline {
+    margin-right: 5vw;
+}
+/* MUSIC PAGE SPECIFIC STYLING */
+ul li#album_info {
+    list-style: none;
+}
+
+li#album_info div p{
+    display: block;
+    font-size: clamp(0.5vw, 2vw, 5vw);
+    font-weight: 500;
+    color: white;
+}
+
+#bs_album a img{
+    display: block;
+    width: clamp(10vw, 300px, 70vw);
+    height: clamp(10vw, 300px, 70vw);
+}
+
+/* PORTFOLIO / PROJECTS PAGE SPECIFIC STYLING */
+#info_projects {
+    text-decoration: none;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-weight: 800;
+    color: white;
+    width: clamp(10vw, 40vw, 70vw);
+}
+#project {
+    width: clamp(10vw, 40vw, 80vw);
+}
+#projects_list {
+    width: clamp(10vw, 40vw, 80vw);
+}
+#projects_list ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
+}
+#projects_list ul li#project_title {
+    color: white;
+    font-size: clamp(1rem, 2vw, 5rem);
+}
+#projects_list ul li#project_desc {
+    color: white;
+    font-size: clamp(1rem, 1vw, 3rem);
+}
+#metapic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+}
+#facepic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+}
+
+testy-component {
+    color: white;
+}
+
+
+h3.card-title {
+    background-color: rgba(90, 20, 120, 0.5);
+    border-radius: 5px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*
+
+min-height = 1 / 100 of the viewport
+
+Flexbox:
+- display:flex;
+- flex-direction: row/column;
+
+*/
